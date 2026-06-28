@@ -1,0 +1,172 @@
+/* ===================================
+   Google Font
+=================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ===================================
+   CSS Reset
+=================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===================================
+   Root Variables
+=================================== */
+
+:root{
+
+    --primary-color: #2563EB;
+    --primary-hover: #1D4ED8;
+
+    --background-color: #F1F5F9;
+
+    --white: #FFFFFF;
+
+    --text-color: #1E293B;
+
+    --secondary-text: #64748B;
+
+    --border-color: #CBD5E1;
+
+    --success: #16A34A;
+
+    --danger: #DC2626;
+
+    --shadow: 0 15px 40px rgba(0,0,0,.12);
+
+    --border-radius: 15px;
+
+}
+
+
+/* ===================================
+   Body
+=================================== */
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+
+    background: var(--background-color);
+
+    color: var(--text-color);
+
+}
+
+
+/* ===================================
+   Headings
+=================================== */
+
+h1,h2,h3,h4,h5,h6{
+
+    color: var(--text-color);
+
+    font-weight: 600;
+
+}
+
+
+/* ===================================
+   Paragraph
+=================================== */
+
+p{
+
+    color: var(--secondary-text);
+
+    line-height: 1.7;
+
+}
+
+
+/* ===================================
+   Links
+=================================== */
+
+a{
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+/* ===================================
+   Images
+=================================== */
+
+img{
+
+    display: block;
+
+    max-width: 100%;
+
+}
+
+
+/* ===================================
+   Buttons
+=================================== */
+
+button{
+
+    border: none;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+}
+
+
+/* ===================================
+   Inputs
+=================================== */
+
+input,
+select,
+textarea{
+
+    font-family: inherit;
+
+    outline: none;
+
+}
+
+
+/* ===================================
+   Lists
+=================================== */
+
+ul,
+ol{
+
+    list-style: none;
+
+}
+
+
+/* ===================================
+   Utility Classes
+=================================== */
+
+.text-center{
+
+    text-align: center;
+
+}
+
+.hidden{
+
+    display: none;
+
+}

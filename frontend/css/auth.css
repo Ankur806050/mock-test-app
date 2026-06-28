@@ -1,0 +1,393 @@
+/* =====================================
+   Body
+===================================== */
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+
+/* =====================================
+   Main Container
+===================================== */
+
+.container{
+
+    width:100%;
+
+    max-width:1200px;
+
+    display:flex;
+
+    background:var(--white);
+
+    border-radius:var(--border-radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* =====================================
+   Left Panel
+===================================== */
+
+.left-panel{
+
+    width:40%;
+
+    background:linear-gradient(135deg,#2563EB,#1D4ED8);
+
+    color:white;
+
+    padding:60px 45px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+.brand h1{
+
+    color:white;
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+
+.brand p{
+
+    color:white;
+
+    opacity:.9;
+
+    margin-bottom:50px;
+
+}
+
+
+/* =====================================
+   Features
+===================================== */
+
+.features{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+
+.feature{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+.feature span{
+
+    width:36px;
+
+    height:36px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:var(--primary-color);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+}
+
+
+.feature p{
+
+    color:white;
+
+}
+
+
+/* =====================================
+   Right Panel
+===================================== */
+
+.right-panel{
+
+    width:60%;
+
+    padding:55px;
+
+}
+
+
+.right-panel h2{
+
+    font-size:34px;
+
+    margin-bottom:8px;
+
+}
+
+
+.subtitle{
+
+    margin-bottom:35px;
+
+}
+
+
+/* =====================================
+   Form
+===================================== */
+
+.input-group{
+
+    margin-bottom:22px;
+
+}
+
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+
+.input-group span{
+
+    font-size:13px;
+
+    color:var(--secondary-text);
+
+}
+
+
+/* =====================================
+   Inputs
+===================================== */
+
+.input-group input,
+.input-group select{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid var(--border-color);
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+
+.input-group input:focus,
+.input-group select:focus{
+
+    border-color:var(--primary-color);
+
+    box-shadow:0 0 10px rgba(37,99,235,.25);
+
+}
+
+
+/* =====================================
+   Radio Buttons
+===================================== */
+
+.radio-group{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+
+.radio-group label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-weight:400;
+
+    cursor:pointer;
+
+}
+
+
+.radio-group input{
+
+    accent-color:var(--primary-color);
+
+}
+
+
+/* =====================================
+   Signup Button
+===================================== */
+
+.signup-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    background:var(--primary-color);
+
+    color:white;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    margin-top:10px;
+
+}
+
+
+.signup-btn:hover{
+
+    background:var(--primary-hover);
+
+    transform:translateY(-2px);
+
+}
+
+
+.signup-btn:active{
+
+    transform:scale(.98);
+
+}
+
+
+/* =====================================
+   Login Text
+===================================== */
+
+.login-text{
+
+    text-align:center;
+
+    margin-top:25px;
+
+}
+
+
+.login-text a{
+
+    color:var(--primary-color);
+
+    font-weight:600;
+
+}
+
+
+.login-text a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media(max-width:900px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    .container{
+
+        flex-direction:column;
+
+    }
+
+    .left-panel{
+
+        width:100%;
+
+        text-align:center;
+
+        padding:45px 30px;
+
+    }
+
+    .feature{
+
+        justify-content:center;
+
+    }
+
+    .right-panel{
+
+        width:100%;
+
+        padding:35px 25px;
+
+    }
+
+    .radio-group{
+
+        flex-direction:column;
+
+        gap:12px;
+
+    }
+
+}
