@@ -1,0 +1,13 @@
+# Backend
+backend/node_modules/
+backend/.env
+
+# Logs
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/settings.json
