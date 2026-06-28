@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "A full-stack mock test platform built using HTML, CSS, JavaScript, Node.js, Express, and MongoDB.",
+  "homepage": "https://github.com/Ankur806050/mock-test-app#readme",
+  "bugs": {
+    "url": "https://github.com/Ankur806050/mock-test-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ankur806050/mock-test-app.git"
+  },
+  "license": "ISC",
+  "author": "Ankur Gupta",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.3",
+    "nodemon": "^3.1.14"
+  }
+}
