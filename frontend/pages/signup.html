@@ -80,6 +80,7 @@
                         type="text"
                         id="fullName"
                         name="fullName"
+                        maxlength="50"
                         placeholder="Enter your full name"
                         required>
 
@@ -95,6 +96,7 @@
                         type="email"
                         id="email"
                         name="email"
+                        maxlength="100"
                         placeholder="Enter your email"
                         required>
 
@@ -110,6 +112,8 @@
                         type="password"
                         id="password"
                         name="password"
+                        minlength="8"
+                        maxlength="64"
                         placeholder="Create a password"
                         required>
 
@@ -127,6 +131,8 @@
                         type="password"
                         id="confirmPassword"
                         name="confirmPassword"
+                        minlength="8"
+                        maxlength="64"
                         placeholder="Confirm your password"
                         required>
 
@@ -213,6 +219,8 @@
                         type="tel"
                         id="phone"
                         name="phone"
+                        maxlength="10"
+                        pattern="[0-9]{10}"
                         placeholder="Enter your phone number">
 
             </div>
