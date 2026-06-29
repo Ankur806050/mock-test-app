@@ -23,7 +23,7 @@ function validateUser(user){
 
 const signupForm = document.getElementById("signupForm");
 
-signupForm.addEventListener("submit",(event) => {
+signupForm.addEventListener("submit",async(event) => {
     event.preventDefault();
 
     const fullName = document.getElementById("fullName").value.trim();
@@ -53,7 +53,41 @@ signupForm.addEventListener("submit",(event) => {
     };
 
     if(validateUser(user)){
-        console.log(user);
+        const requestBody = {
+            fullName,
+            email,
+            password,
+            currentClass,
+            targetYear,
+            phone
+        };
+        await registerUser(requestBody);
     }
 });
 
+async function registerUser(user){
+
+    try{
+        const response = await fetch("http://localhost:3000/api/auth/signup",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(user)
+        });
+
+        const data = await response.json();
+
+        if(response.ok){
+            alert(data.message);
+            signupForm.reset();
+        }
+        else{
+            alert(data.message);
+        }
+
+    }
+    catch(error){
+        alert("Unable to connect to server.");
+    }
+}
