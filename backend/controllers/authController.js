@@ -1,4 +1,9 @@
 const User = require("../models/user.js");
+const path = require("path");
+
+function signupPage(req,res){
+    res.sendFile(path.join(__dirname,"../../frontend/pages/signup.html"));
+}
 
 async function signup(req,res){
     try{
@@ -37,4 +42,4 @@ async function signup(req,res){
         });
     }
 }
-module.exports = {signup};
+module.exports = {signup,signupPage};
