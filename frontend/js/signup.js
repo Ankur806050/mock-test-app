@@ -80,7 +80,7 @@ async function registerUser(user){
 
         if(response.ok){
             alert(data.message);
-            signupForm.reset();
+            window.location.href = "/login";
         }
         else{
             alert(data.message);
