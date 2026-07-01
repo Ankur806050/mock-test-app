@@ -11,6 +11,13 @@ function loginPage(req,res){
     res.sendFile(path.join(__dirname,"../../frontend/pages/login.html"));
 }
 
+function logoutUser(req,res){
+    res.clearCookie("token");
+    return res.status(200).json({
+        message:"Logged Out Successfully"
+    });
+}
+
 async function signup(req,res){
     try{
         const{fullName,email,password,currentClass,targetYear,phone} = req.body;
@@ -93,4 +100,4 @@ async function login(req,res){
     }
 }
 
-module.exports = {signup,signupPage,login,loginPage};
+module.exports = {signup,signupPage,login,loginPage,logoutUser};
