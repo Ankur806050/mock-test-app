@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname,"../frontend")));
 app.use("/",authRouter);
 app.use("/",dashboardRouter);
 app.get("/",(req,res) => {
-    res.send("Server is running on PORT 3000");
+    res.sendFile(path.join(__dirname,"../frontend/pages/index.html"));
 });
 
 app.listen(PORT,() => {

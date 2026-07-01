@@ -1,0 +1,183 @@
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+
+    background: var(--white);
+
+    padding: 18px 60px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow: var(--shadow);
+
+}
+
+.logo h2{
+
+    color: var(--primary-color);
+
+}
+
+.nav-links{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.nav-links a{
+
+    font-weight: 500;
+
+    transition: .3s;
+
+}
+
+.nav-links a:hover{
+
+    color: var(--primary-color);
+
+}
+
+#logoutBtn{
+
+    background: var(--danger);
+
+    color: var(--white);
+
+    padding: 10px 22px;
+
+    border-radius: 8px;
+
+    transition: .3s;
+
+}
+
+#logoutBtn:hover{
+
+    opacity: .9;
+
+}
+
+/* ===========================
+   Dashboard
+=========================== */
+
+.dashboard{
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+
+    margin-bottom: 35px;
+
+}
+
+.hero h1{
+
+    margin-bottom: 10px;
+
+}
+
+/* ===========================
+   Mock Test Card
+=========================== */
+
+.mock-test-card{
+
+    background: var(--white);
+
+    padding: 40px;
+
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--shadow);
+
+    text-align: center;
+
+}
+
+.mock-test-card h2{
+
+    margin-bottom: 15px;
+
+}
+
+.mock-test-card p{
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+}
+
+.start-btn{
+
+    display: inline-block;
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+    padding: 14px 36px;
+
+    border-radius: 10px;
+
+    font-weight: 500;
+
+    transition: .3s;
+
+}
+
+.start-btn:hover{
+
+    background: var(--primary-hover);
+
+}
+
+/* ===========================
+   Recent Activity
+=========================== */
+
+.activity{
+
+    margin-top: 40px;
+
+}
+
+.activity h2{
+
+    margin-bottom: 20px;
+
+}
+
+.activity-card{
+
+    background: var(--white);
+
+    padding: 30px;
+
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--shadow);
+
+}
