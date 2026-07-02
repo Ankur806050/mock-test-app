@@ -1,0 +1,172 @@
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 40px;
+
+}
+
+.back-btn{
+
+    color: var(--white);
+
+    font-weight: 500;
+
+}
+
+
+/* ===========================
+   Main Container
+=========================== */
+
+.container{
+
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 50px auto;
+
+}
+
+
+/* ===========================
+   Card
+=========================== */
+
+.instruction-card{
+
+    background: var(--white);
+
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--shadow);
+
+    padding: 40px;
+
+}
+
+.instruction-card h2{
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* ===========================
+   Test Details
+=========================== */
+
+.test-details{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 40px;
+
+}
+
+.detail-box{
+
+    flex: 1;
+
+    background: #F8FAFC;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+.detail-box h3{
+
+    margin-bottom: 10px;
+
+}
+
+.detail-box p{
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: var(--primary-color);
+
+}
+
+
+/* ===========================
+   Instructions
+=========================== */
+
+.instructions-list{
+
+    margin-top: 20px;
+
+    margin-left: 20px;
+
+    list-style: disc;
+
+}
+
+.instructions-list li{
+
+    margin-bottom: 15px;
+
+    color: var(--secondary-text);
+
+    line-height: 1.7;
+
+}
+
+
+/* ===========================
+   Button
+=========================== */
+
+.start-btn{
+
+    width: 100%;
+
+    margin-top: 40px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+    font-size: 17px;
+
+    transition: .3s;
+
+}
+
+.start-btn:hover{
+
+    background: var(--primary-hover);
+
+}

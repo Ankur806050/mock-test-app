@@ -6,6 +6,7 @@ const cookieParser = require("cookie-parser");
 const connectDB = require("./config/db.js");
 const authRouter = require("./routes/authRoutes.js");
 const dashboardRouter = require("./routes/dashboardRoutes.js");
+const testRouter = require("./routes/testRoutes.js");
 const PORT = process.env.PORT || 3000;
 
 connectDB();
@@ -14,9 +15,14 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname,"../frontend")));
 app.use("/",authRouter);
 app.use("/",dashboardRouter);
+app.use("/",testRouter);
 app.get("/",(req,res) => {
     res.sendFile(path.join(__dirname,"../frontend/pages/index.html"));
 });
+
+app.get("/mock-tests",(req,res) => {
+    res.sendFile(path.join(__dirname,"../frontend/pages/test.html"));
+})
 
 app.listen(PORT,() => {
     console.log(`Server is running on PORT ${PORT}`);
