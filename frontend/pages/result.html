@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Test Result</title>
+
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/result.css">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <h1>JEE Mock Test App</h1>
+
+        <a href="/dashboard" class="dashboard-btn">
+            Dashboard
+        </a>
+
+    </header>
+
+    <main class="container">
+
+        <div class="result-card">
+
+            <h2 id="testTitle">
+                JEE Main January 2025 Shift 1
+            </h2>
+
+            <p class="subtitle">
+                Your test has been submitted successfully.
+            </p>
+
+            <div class="score-section">
+
+                <h1 id="score">
+                    0 / 300
+                </h1>
+
+                <p>Total Score</p>
+
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-box correct">
+
+                    <div class="icon">✓</div>
+
+                    <h3 id="correct">0</h3>
+
+                    <p>Correct</p>
+
+                </div>
+
+                <div class="stat-box incorrect">
+
+                    <div class="icon">✕</div>
+
+                    <h3 id="incorrect">0</h3>
+
+                    <p>Incorrect</p>
+
+                </div>
+
+                <div class="stat-box unanswered">
+
+                    <div class="icon">?</div>
+
+                    <h3 id="unanswered">0</h3>
+
+                    <p>Unanswered</p>
+
+                </div>
+
+            </div>
+
+            <div class="summary">
+
+                <div class="summary-row">
+
+                    <span>Total Questions</span>
+
+                    <span id="totalQuestions">90</span>
+
+                </div>
+
+                <div class="summary-row">
+
+                    <span>Attempted Questions</span>
+
+                    <span id="attempted">0</span>
+
+                </div>
+
+                <div class="summary-row">
+
+                    <span>Accuracy</span>
+
+                    <span id="accuracy">0%</span>
+
+                </div>
+
+            </div>
+
+            <button
+                class="dashboard-button"
+                onclick="window.location.href='/dashboard'">
+
+                Back to Dashboard
+
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="/js/result.js"></script>
+
+</body>
+
+</html>

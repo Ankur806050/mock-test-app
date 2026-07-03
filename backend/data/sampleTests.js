@@ -5,8 +5,8 @@ module.exports = [
         month: "January",
         shift: 1,
         duration: 180,
-        totalQuestions: 10,
-        totalMarks: 40,
+        totalQuestions: 5,
+        totalMarks: 20,
         isPublished: true
     }
 ];

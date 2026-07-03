@@ -291,11 +291,25 @@ function startTimer() {
     }, 1000);
 }
 
-function submitTest(){
-    if(submitted) return;
+async function submitTest() {
+    if (submitted) return;
     submitted = true;
     clearInterval(timerInterval);
-    console.log(responses);
+    try {
+        const response = await fetch(`/submit-test/${test._id}`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                responses
+            })
+        });
+        const data = await response.json();
+        window.location.href = `/result/${data.attempt._id}`;
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 async function init(){

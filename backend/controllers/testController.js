@@ -18,7 +18,6 @@ function attemptTestPage(req,res){
     );
 }
 
-
 async function getAllTests(req,res){
     try{
         const tests = await Test.find({isPublished:true});
