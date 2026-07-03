@@ -1,0 +1,362 @@
+/* ==========================
+   Navbar
+========================== */
+
+.navbar{
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 35px;
+
+}
+
+.timer{
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================
+   Main Layout
+========================== */
+
+.main-container{
+
+    width:95%;
+
+    margin:30px auto;
+
+    display:grid;
+
+    grid-template-columns:3fr 1fr;
+
+    gap:30px;
+
+}
+
+
+/* ==========================
+   Question Panel
+========================== */
+
+.question-panel{
+
+    background:var(--white);
+
+    padding:30px;
+
+    border-radius:var(--border-radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+.question-header{
+
+    margin-bottom:25px;
+
+}
+
+.question-box{
+
+    min-height:140px;
+
+    border:1px solid var(--border-color);
+
+    border-radius:10px;
+
+    padding:20px;
+
+    margin-bottom:30px;
+
+}
+
+
+/* ==========================
+   Options
+========================== */
+
+.options{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-bottom:35px;
+
+}
+
+.option{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px;
+
+    border:1px solid var(--border-color);
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+.option:hover{
+
+    background:#F8FAFC;
+
+}
+
+
+/* ==========================
+   Navigation Buttons
+========================== */
+
+.navigation-buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.navigation-buttons button{
+
+    flex:1;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    color:white;
+
+    background:var(--primary-color);
+
+}
+
+.navigation-buttons button:hover{
+
+    background:var(--primary-hover);
+
+}
+
+
+/* ==========================
+   Sidebar
+========================== */
+
+.sidebar{
+
+    background:var(--white);
+
+    border-radius:var(--border-radius);
+
+    box-shadow:var(--shadow);
+
+    padding:25px;
+
+    height:fit-content;
+
+}
+
+.sidebar h3{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ==========================
+   Palette
+========================== */
+
+.palette{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:12px;
+
+    margin-bottom:30px;
+
+}
+
+.palette button{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#E2E8F0;
+
+    font-weight:600;
+
+}
+
+.palette button:hover{
+
+    background:var(--primary-color);
+
+    color:white;
+
+}
+
+
+/* ==========================
+   Submit Button
+========================== */
+
+#submitBtn{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    background:var(--success);
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+#submitBtn:hover{
+
+    opacity:.9;
+
+}
+
+.numerical-input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid var(--border-color);
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+.palette button.not-visited{
+    background: #CBD5E1;
+    color: black;
+}
+
+.palette button.not-answered{
+    background: #EF4444;
+    color: white;
+}
+
+.palette button.answered{
+    background: #16A34A;
+    color: white;
+}
+
+.palette button.review{
+    background: #A855F7;
+    color: white;
+}
+
+.palette button.answered-review{
+    background: #F59E0B;
+    color: white;
+}
+
+.palette button.current{
+    background: #2563EB;
+    color: white;
+}
+
+.legend{
+
+    margin-top:25px;
+
+    border-top:1px solid var(--border-color);
+
+    padding-top:20px;
+
+}
+
+.legend h4{
+
+    margin-bottom:15px;
+
+}
+
+.legend-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:10px;
+
+}
+
+.legend-box{
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+}
+
+.current-box{
+    background:#2563EB;
+}
+
+.not-visited-box{
+    background:#CBD5E1;
+}
+
+.not-answered-box{
+    background:#EF4444;
+}
+
+.answered-box{
+    background:#16A34A;
+}
+
+.review-box{
+    background:#A855F7;
+}
+
+.answered-review-box{
+    background:#F59E0B;
+}

@@ -37,7 +37,7 @@ const questionSchema = new Schema({
         required: true
     },
 
-    image: {
+    questionImage: {
         type: String,
         default: ""
     },
@@ -47,7 +47,7 @@ const questionSchema = new Schema({
     }],
 
     correctAnswer: {
-        type: String,
+        type: Number,
         required: true
     },
 
