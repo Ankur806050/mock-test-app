@@ -4,7 +4,9 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Dashboard | Mock Test App</title>
 
@@ -18,12 +20,16 @@
     <header class="navbar">
 
         <div class="logo">
-            <h2>Mock Test App</h2>
+
+            <h2>JEE Mock Test App</h2>
+
         </div>
 
         <div class="nav-links">
 
-            <a href="/profile">Profile</a>
+            <a href="/profile">
+                Profile
+            </a>
 
             <button id="logoutBtn">
                 Logout
@@ -35,38 +41,127 @@
 
     <main class="dashboard">
 
+        <!-- Hero -->
+
         <section class="hero">
 
-            <h1>Welcome 👋</h1>
+            <h1>
+                Welcome 👋
+            </h1>
 
             <p>
-                Ready to improve your JEE Main score? Start your next mock test.
+                Practice consistently and improve your JEE Main score with full-length mock tests.
             </p>
 
         </section>
 
-        <section class="mock-test-card">
+        <!-- Statistics -->
 
-            <h2>Full Length Mock Test</h2>
+        <section class="statistics">
 
-            <p>
-                Attempt a complete JEE Main mock test with timer,
-                instant evaluation and detailed analysis.
-            </p>
+            <div class="stat-card">
 
-            <a href="/tests" class="start-btn">
-                Start Mock Test
-            </a>
+                <h2 id="totalAttempts">
+                    0
+                </h2>
+
+                <p>
+                    Tests Attempted
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2 id="bestScore">
+                    0
+                </h2>
+
+                <p>
+                    Best Score
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2 id="averageScore">
+                    0
+                </h2>
+
+                <p>
+                    Average Score
+                </p>
+
+            </div>
 
         </section>
+
+        <!-- Quick Actions -->
+
+        <section class="quick-actions">
+
+            <div class="action-card">
+
+                <h3>
+                    Full Length Mock Test
+                </h3>
+
+                <p>
+                    Attempt a complete JEE Main mock test with timer and instant evaluation.
+                </p>
+
+                <a href="/tests"
+                   class="primary-btn">
+
+                    Start Mock Test
+
+                </a>
+
+            </div>
+
+            <div class="action-card">
+
+                <h3>
+                    Attempt History
+                </h3>
+
+                <p>
+                    View all your previous mock tests and results.
+                </p>
+
+                <a href="/history"
+                   class="secondary-btn">
+
+                    View History
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Recent Activity -->
 
         <section class="activity">
 
-            <h2>Recent Activity</h2>
+            <div class="section-header">
 
-            <div class="activity-card">
+                <h2>
+                    Recent Activity
+                </h2>
 
-                <p>No mock tests attempted yet.</p>
+                <a href="/history">
+
+                    View All →
+
+                </a>
+
+            </div>
+
+            <div id="recentActivity">
+
+                <!-- Dynamic cards -->
 
             </div>
 

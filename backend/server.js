@@ -10,6 +10,7 @@ const testRouter = require("./routes/testRoutes.js");
 const attemptRouter = require("./routes/attemptRoutes.js");
 const resultRouter = require("./routes/resultRoutes.js");
 const profileRouter = require("./routes/profileRoutes.js");
+const attemptHistoryRouter = require("./routes/attemptHistoryRoutes.js");
 const PORT = process.env.PORT || 3000;
 
 connectDB();
@@ -22,6 +23,7 @@ app.use("/",testRouter);
 app.use("/",attemptRouter);
 app.use("/",resultRouter);
 app.use("/",profileRouter);
+app.use("/",attemptHistoryRouter);
 app.get("/",(req,res) => {
     res.sendFile(path.join(__dirname,"../frontend/pages/index.html"));
 });
