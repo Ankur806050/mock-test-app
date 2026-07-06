@@ -9,6 +9,7 @@ const dashboardRouter = require("./routes/dashboardRoutes.js");
 const testRouter = require("./routes/testRoutes.js");
 const attemptRouter = require("./routes/attemptRoutes.js");
 const resultRouter = require("./routes/resultRoutes.js");
+const profileRouter = require("./routes/profileRoutes.js");
 const PORT = process.env.PORT || 3000;
 
 connectDB();
@@ -20,6 +21,7 @@ app.use("/",dashboardRouter);
 app.use("/",testRouter);
 app.use("/",attemptRouter);
 app.use("/",resultRouter);
+app.use("/",profileRouter);
 app.get("/",(req,res) => {
     res.sendFile(path.join(__dirname,"../frontend/pages/index.html"));
 });
