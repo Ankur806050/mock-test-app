@@ -1,0 +1,450 @@
+/* ==========================
+   Navbar
+========================== */
+
+.navbar{
+
+    background:var(--primary-color);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 35px;
+
+}
+
+.dashboard-btn{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+   Layout
+========================== */
+
+.main-container{
+
+    width:95%;
+
+    margin:30px auto;
+
+    display:grid;
+
+    grid-template-columns:3fr 1fr;
+
+    gap:30px;
+
+}
+
+/* ==========================
+   Question Panel
+========================== */
+
+.question-panel{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:var(--border-radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+.question-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.status-badge.correct{
+    background:#16A34A;
+}
+
+.status-badge.incorrect{
+    background:#DC2626;
+}
+
+.status-badge.unanswered{
+    background:#FACC15;
+    color:black;
+}
+
+/* ==========================
+   Question
+========================== */
+
+.question-box{
+
+    border:1px solid var(--border-color);
+
+    border-radius:10px;
+
+    padding:20px;
+
+    margin-bottom:25px;
+
+    min-height:120px;
+
+}
+
+/* ==========================
+   Options
+========================== */
+
+.options{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+.option{
+
+    border:1px solid var(--border-color);
+
+    border-radius:10px;
+
+    padding:16px;
+
+    font-size:16px;
+
+}
+
+/* Option Colors */
+
+.correct-option{
+
+    background:#DCFCE7;
+
+    border:2px solid #16A34A;
+
+}
+
+.wrong-option{
+
+    background:#FEE2E2;
+
+    border:2px solid #DC2626;
+
+}
+
+.user-option{
+
+    background:#DBEAFE;
+
+    border:2px solid #2563EB;
+
+}
+
+/* ==========================
+   Answer Box
+========================== */
+
+.answer-box{
+
+    border:1px solid var(--border-color);
+
+    border-radius:10px;
+
+    padding:20px;
+
+    margin-bottom:30px;
+
+}
+
+.answer-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:12px 0;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.answer-row:last-child{
+
+    border-bottom:none;
+
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.navigation-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.navigation-buttons button{
+
+    flex:1;
+
+    background:var(--primary-color);
+
+    color:white;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+.navigation-buttons button:hover{
+
+    background:var(--primary-hover);
+
+}
+
+/* ==========================
+   Sidebar
+========================== */
+
+.sidebar{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:var(--border-radius);
+
+    box-shadow:var(--shadow);
+
+    height:fit-content;
+
+}
+
+.sidebar h3{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+   Palette
+========================== */
+
+.palette{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:12px;
+
+    margin-bottom:25px;
+
+}
+
+.palette button{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.palette .current{
+
+    background:var(--primary-color);
+
+    color:white;
+
+}
+
+.palette .correct{
+
+    background:#16A34A;
+
+    color:white;
+
+}
+
+.palette .incorrect{
+
+    background:#DC2626;
+
+    color:white;
+
+}
+
+.palette .unanswered{
+
+    background:#FACC15;
+
+    color:black;
+
+}
+
+/* ==========================
+   Legend
+========================== */
+
+.legend{
+
+    margin-bottom:25px;
+
+}
+
+.legend h4{
+
+    margin-bottom:15px;
+
+}
+
+.legend-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:10px;
+
+}
+
+.legend-box{
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+}
+
+.current-box{
+
+    background:var(--primary-color);
+
+}
+
+.correct-box{
+
+    background:#16A34A;
+
+}
+
+.wrong-box{
+
+    background:#DC2626;
+
+}
+
+.unanswered-box{
+
+    background:#FACC15;
+
+}
+
+/* ==========================
+   Statistics
+========================== */
+
+.statistics{
+
+    border-top:1px solid var(--border-color);
+
+    margin-top:20px;
+
+    padding-top:20px;
+
+}
+
+.stat{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================
+   Result Button
+========================== */
+
+#resultBtn{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:15px;
+
+    background:var(--success);
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+#resultBtn:hover{
+
+    opacity:.9;
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:900px){
+
+    .main-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

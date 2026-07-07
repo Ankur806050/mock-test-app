@@ -14,6 +14,9 @@ async function loadResult() {
         document.getElementById("attempted").textContent = `${attempted}`;
         const accuracy = attempted === 0 ? 0 : ((attempt.correctAnswers / attempted) * 100).toFixed(2);
         document.getElementById("accuracy").textContent = `${accuracy}%`;
+        document.getElementById("reviewBtn").addEventListener("click",() => {
+            window.location.href = `/review/${attemptId}`;
+        });
     }
     catch (error) {
         console.log(error);

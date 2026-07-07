@@ -10,20 +10,27 @@ async function submitAttempt(req, res) {
         const { testId } = req.params;
         const userId = req.user.id;
         const { responses } = req.body;
-
-        const questions = await Question.find({testId}).sort({questionNumber:1});
-        for(let i=0;i<questions.length;i++){
+        const questions = await Question.find({ testId })
+            .sort({ questionNumber: 1 });
+        const attemptResponses = [];
+        for (let i = 0; i < questions.length; i++) {
             const question = questions[i];
             const response = responses[i];
-            if(response.answer === null){
+            // Save response in Attempt format
+            attemptResponses.push({
+                questionId: question._id,
+                selectedAnswer: response.answer,
+                status: response.status
+            });
+            // Calculate Result
+            if (response.answer === null) {
                 unanswered++;
-                continue;
             }
-            if(response.answer === question.correctAnswer){
+            else if (response.answer === question.correctAnswer) {
                 score += question.positiveMarks;
                 correctAnswers++;
             }
-            else{
+            else {
                 score += question.negativeMarks;
                 incorrectAnswers++;
             }
@@ -31,7 +38,7 @@ async function submitAttempt(req, res) {
         const attempt = new Attempt({
             userId,
             testId,
-            responses,
+            responses: attemptResponses,
             score,
             correctAnswers,
             incorrectAnswers,
@@ -39,20 +46,16 @@ async function submitAttempt(req, res) {
         });
         await attempt.save();
         return res.status(200).json({
-            message:"Test Submitted Successfully",
+            message: "Test Submitted Successfully",
             attempt
         });
-    } catch (error) {
-
-        console.log("❌ Failed to receive attempt");
-        console.log(error.message);
-
+    }
+    catch (error) {
+        console.log(error);
         return res.status(500).json({
             message: "Internal Server Error"
         });
-
     }
-
 }
 
 module.exports = {
