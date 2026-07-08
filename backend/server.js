@@ -30,9 +30,11 @@ app.get("/",(req,res) => {
     res.sendFile(path.join(__dirname,"../frontend/pages/index.html"));
 });
 
-app.get("/mock-tests",(req,res) => {
-    res.sendFile(path.join(__dirname,"../frontend/pages/test.html"));
-})
+app.use((req,res) => {
+    res.status(404).sendFile(
+        path.join(__dirname,"../frontend/pages/404.html")
+    );
+});
 
 app.listen(PORT,() => {
     console.log(`Server is running on PORT ${PORT}`);
