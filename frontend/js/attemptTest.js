@@ -19,7 +19,7 @@ async function loadQuestions(){
             status: "not-visited"
         }));
     }catch(error){
-        alert("Unable to load Questions");
+        showToast("Unable to load questions","error");;
     }
 }
 
@@ -283,7 +283,7 @@ function startTimer() {
         }
         if (timeLeft === 0) {
             clearInterval(timerInterval);
-            alert("Time is Over!");
+            showToast("Time is over! Submitting test...","info");
             submitTest();
             return;
         }

@@ -28,9 +28,7 @@ async function loadTests() {
         });
 
     } catch (error) {
-
-        alert("Unable to load mock tests.");
-
+        showToast("Unable to load mock tests.","error");
     }
 }
 

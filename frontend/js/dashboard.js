@@ -68,8 +68,7 @@ async function loadHistory() {
         });
     }
     catch (error) {
-        console.log(error);
-        alert("Unable to load attempt history.");
+        showToast("Unable to load attempt history.","error");
     }
 }
 
@@ -84,11 +83,10 @@ logoutBtn.addEventListener("click",async(event) => {
         });
         const data = await response.json();
         if(response.ok){
-            alert(data.message);
             window.location.href = "/";
         }
     }catch(error){
-        alert("Unable to connect to server");
+        showToast("Unable to connect to server","error");
     }
 });
 

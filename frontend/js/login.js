@@ -41,11 +41,10 @@ async function loginUser(user){
 
         const data = await response.json();
         if(response.ok){
-            alert(data.message);
             window.location.href = "/dashboard";
         }
         else{
-            alert(data.message);
+            showToast(data.message, "error");
         }
     }catch(error){
         alert("Unable to connect to server.");

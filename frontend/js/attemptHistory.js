@@ -55,7 +55,7 @@ async function loadHistory() {
     }
     catch (error) {
         console.log(error);
-        alert("Unable to load attempt history.");
+        showToast("Unable to load history","error");
     }
 }
 

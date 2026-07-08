@@ -1,20 +1,20 @@
 function validateUser(user){
     if(user.password !== user.confirmPassword){
-        alert("Password and Confirm Password do not match.");
+        showToast("Password and Confirm Password do not match.","error");
         return false;
     }
     if(user.currentClass === ""){
-        alert("Please select your current class.");
+        showToast("Please select your current class.","errro");
         return false;
     }
     if(user.targetYear === ""){
-        alert("Please select your target year.");
+        showToast("Please select your target year.","error");
         return false;
     }
     if(user.phone !== ""){
         const phoneRegex = /^[0-9]{10}$/;
         if(!phoneRegex.test(user.phone)){
-            alert("Phone number must contain exactly 10 digits.");
+            showToast("Enter a valid phone number", "error");;
             return false;
         }
     }
@@ -79,15 +79,17 @@ async function registerUser(user){
         const data = await response.json();
 
         if(response.ok){
-            alert(data.message);
-            window.location.href = "/login";
+            showToast("Registration Successful", "success");
+            setTimeout(() => {
+                window.location.href="/login";
+            },1500);
         }
         else{
-            alert(data.message);
+            showToast(data.message,"error");
         }
 
     }
     catch(error){
-        alert("Unable to connect to server.");
+        showToast("Unable to connect to server.","error");
     }
 }

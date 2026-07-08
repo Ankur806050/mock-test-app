@@ -20,7 +20,7 @@ async function loadResult() {
     }
     catch (error) {
         console.log(error);
-        alert("Unable to load result.");
+        showToast("Unable to load result","error");;
     }
 }
 

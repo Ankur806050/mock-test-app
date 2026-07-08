@@ -26,7 +26,7 @@ async function loadReview() {
     }
     catch (error) {
         console.log(error);
-        alert("Unable to load review.");
+        showToast("Unable to load review","error");
     }
 }
 function displayQuestion() {
