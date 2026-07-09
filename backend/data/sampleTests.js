@@ -1,12 +1,12 @@
 module.exports = [
     {
-        title: "JEE Main January 2025 Shift 1",
-        year: 2025,
+        title: "JEE Main January 3000 Shift 1",
+        year: 3000,
         month: "January",
         shift: 1,
         duration: 180,
-        totalQuestions: 5,
-        totalMarks: 20,
+        totalQuestions: 90,
+        totalMarks: 300,
         isPublished: true
     }
 ];
