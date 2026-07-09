@@ -325,6 +325,7 @@ document.getElementById("nextBtn").addEventListener("click", nextQuestion);
 document.getElementById("previousBtn").addEventListener("click", previousQuestion);
 document.getElementById("reviewBtn").addEventListener("click", markForReview);
 document.getElementById("clearBtn").addEventListener("click", clearResponse);
+document.getElementById("submitBtn").addEventListener("click",submitTest);
 window.addEventListener("beforeunload", (event) => {
     if (!submitted) {
         event.preventDefault();
