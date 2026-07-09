@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "24.16.0"
+  },
   "name": "backend",
   "version": "1.0.0",
   "description": "A full-stack mock test platform built using HTML, CSS, JavaScript, Node.js, Express, and MongoDB.",
