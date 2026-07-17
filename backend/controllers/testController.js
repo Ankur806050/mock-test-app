@@ -34,7 +34,9 @@ async function getAllTests(req,res){
 async function getQuestions(req, res) {
     try {
         const testId = req.params.testId;
-        const questions = await Question.find({ testId });
+        const questions = await Question.find({ testId })
+            .sort({ questionNumber: 1 }); // Ascending order
+
         return res.status(200).json(questions);
     } catch (error) {
         console.log("❌ Failed to fetch questions");
